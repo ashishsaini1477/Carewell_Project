@@ -1,0 +1,22 @@
+# Node
+node_modules/
+dist/
+
+# Angular
+.angular/
+coverage/
+
+# .NET
+bin/
+obj/
+
+# VS
+.vs/
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Environment
+appsettings.Development.json

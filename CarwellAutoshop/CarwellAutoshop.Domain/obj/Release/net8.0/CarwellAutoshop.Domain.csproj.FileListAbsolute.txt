@@ -1,0 +1,11 @@
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Domain\bin\Release\net8.0\CarwellAutoshop.Domain.deps.json
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Domain\bin\Release\net8.0\CarwellAutoshop.Domain.dll
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Domain\bin\Release\net8.0\CarwellAutoshop.Domain.pdb
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Domain\obj\Release\net8.0\CarwellAutoshop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Domain\obj\Release\net8.0\CarwellAutoshop.Domain.AssemblyInfoInputs.cache
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Domain\obj\Release\net8.0\CarwellAutoshop.Domain.AssemblyInfo.cs
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Domain\obj\Release\net8.0\CarwellAutoshop.Domain.csproj.CoreCompileInputs.cache
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Domain\obj\Release\net8.0\CarwellAutoshop.Domain.dll
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Domain\obj\Release\net8.0\refint\CarwellAutoshop.Domain.dll
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Domain\obj\Release\net8.0\CarwellAutoshop.Domain.pdb
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Domain\obj\Release\net8.0\ref\CarwellAutoshop.Domain.dll

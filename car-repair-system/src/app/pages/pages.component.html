@@ -1,0 +1,92 @@
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-dark bg-dark simple-navbar" style="z-index:2; border-bottom:1px solid;">
+
+        <!-- LOGO -->
+        <a routerLink="/" class="navbar-brand p-0 m-0">
+            <img src="./assets/images/Carwell_Logo.png" alt="Garage" width="70">
+        </a>
+
+        <!-- LOGOUT BUTTON -->
+        <button class="btn btn-outline-light btn-sm" (click)="logOut()">
+            Logout
+        </button>
+
+
+    </nav>
+
+    <div id="sidenav" appSidenav class="sidenav bg-dark">
+        <ul class="main-ul">
+            
+            <li>
+                <a routerLink="/dashboard" routerLinkActive="active" (click)="hideSidenav()"><i
+                        class="fa fa-dashboard"></i> Dashboard</a>
+            </li>
+            <li>
+                <a class="sidenav-menu"><i class="fa fa-group"></i> Customers
+                    <span class="right-icon"><i class="fa fa-angle-down"></i></span>
+                </a>
+                <div id="sub-menu">
+                    <ul>
+                        <li><a routerLink="/add-customer" routerLinkActive="active" (click)="hideSidenav()">Add
+                                Customer</a></li>
+                        <li><a routerLink="/customer-list" routerLinkActive="active" (click)="hideSidenav()">Customer
+                                List</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <a class="sidenav-menu"><i class="fa fa-envelope"></i> Job Cards
+                    <span class="right-icon"><i class="fa fa-angle-down"></i></span>
+                </a>
+                <div id="sub-menu">
+                    <ul>
+                        <li><a routerLink="/add-jobcard" routerLinkActive="active" (click)="hideSidenav()">Add
+                                JobCard</a></li>
+                        <li><a routerLink="/jobcard-list" routerLinkActive="active" (click)="hideSidenav()">JobCard
+                                List</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- <li>
+                <a class="sidenav-menu"><i class="fa fa-gears"></i> Stocks
+                    <span class="right-icon"><i class="fa fa-angle-down"></i></span>
+                </a>
+                <div id="sub-menu">
+                    <ul>
+                        <li><a routerLink="/add-stock" routerLinkActive="active" (click)="hideSidenav()">Add Stock</a>
+                        </li>
+                        <li><a routerLink="/stock-list" routerLinkActive="active" (click)="hideSidenav()">Stock List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li> -->
+            <li>
+                <a class="sidenav-menu"><i class="fa fa-automobile"></i> Invoice
+                    <span class="right-icon"><i class="fa fa-angle-down"></i></span>
+                </a>
+                <div id="sub-menu">
+                    <ul>
+                        <li><a routerLink="/add-invoice" routerLinkActive="active" (click)="hideSidenav()">Create
+                                Invoice</a></li>
+                        <li><a routerLink="/edit-invoice" routerLinkActive="active" (click)="hideSidenav()">Edit
+                                Invoice</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <!-- <li>
+                <a routerLink="/employee" routerLinkActive="active" (click)="hideSidenav()"><i
+                        class="fa fa-briefcase"></i> Employee</a>
+            </li> -->
+        </ul>
+    </div>
+
+    <div id="page-wrapper">
+        <router-outlet></router-outlet>
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>

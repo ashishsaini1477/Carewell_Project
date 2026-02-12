@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarwellAutoshop.Domain\CarwellAutoshop.Domain.csproj" />
+    <ProjectReference Include="..\CarwellAutoshop.Infrastructure\CarwellAutoshop.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

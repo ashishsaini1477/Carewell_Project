@@ -1,0 +1,155 @@
+/* =========================
+   CARD & HEADER
+========================= */
+.invoice-card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.invoice-header {
+  background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-control {
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+.search-box {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #0d6efd;
+}
+
+/* =========================
+   SELECT ROW
+========================= */
+.select-row {
+  margin-bottom: 20px;
+}
+
+/* =========================
+   TABLE
+========================= */
+.invoice-table {
+  margin-top: 15px;
+}
+
+.invoice-table thead {
+  background-color: #f1f3f5;
+}
+
+.invoice-table th {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.invoice-table td {
+  vertical-align: middle;
+}
+
+.invoice-table input {
+  font-size: 14px;
+}
+
+/* =========================
+   INPUT WIDTH CONTROL
+========================= */
+
+/* Item name – widest */
+.item-input {
+  min-width: 230px;
+}
+
+/* Qty – smallest */
+.qty-input {
+  width: 65px;
+  text-align: center;
+}
+
+/* Unit price */
+.price-input {
+  width: 100px;
+  text-align: right;
+}
+
+/* CGST & SGST */
+.tax-input {
+  width: 65px;
+  text-align: right;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn_width {
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+.btn-outline-primary {
+  border-radius: 6px;
+}
+
+.btn-danger.btn-sm {
+  padding: 4px 8px;
+}
+
+/* =========================
+   TOTALS BOX
+========================= */
+.totals-box {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: right;
+  margin-top: 15px;
+}
+
+.discount-input {
+  width: 110px;
+  text-align: right;
+  margin-left: 8px;
+}
+
+/* =========================
+   FINAL SAVE BUTTON
+========================= */
+.btn-success.btn-lg {
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* =========================
+   SMALL UX IMPROVEMENTS
+========================= */
+.invoice-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+small.text-danger {
+  font-size: 12px;
+}

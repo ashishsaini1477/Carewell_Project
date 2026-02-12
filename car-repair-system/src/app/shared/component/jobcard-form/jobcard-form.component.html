@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col-md-6 form-group">
+    <label for="garage">Garage Name</label>
+    <input type="text" class="form-control" disabled id="garage" name="garage" [ngModel]="'Carwell Autoshop'">
+  </div>
+  
+  <div class="col-md-6 form-group">
+    <label>Customer Name</label>
+    <select class="form-control" id="customerId" name="customerId" [(ngModel)]="jobcard.customerId" required>
+
+      <option [ngValue]="0" default>-- Select Customer --</option>
+      <option *ngFor="let cus of customerArray" [ngValue]="cus.customerId">
+        {{ cus.name }} {{ cus.mobile }} {{cus.address}}
+      </option>
+
+    </select>
+
+  </div>
+
+  <div class="col-md-6 form-group">
+    <label for="registrationNo">Vehicle Registration No</label>
+    <input type="text" class="form-control" style="text-transform: uppercase" id="registrationNo" name="registrationNo" maxlength="12"
+      (ngModelChange)="onRegChange($event)" [(ngModel)]="jobcard.registrationNo">
+    <!-- <small class="text-danger" *ngIf="isRegInvalid">
+      Invalid vehicle number (Eg: DL01AT7833)
+    </small> -->
+  </div>
+
+  <!-- (ngModelChange)="jobcard.registrationNo = $event.toUpperCase()" -->
+  <div class="col-md-6 form-group">
+    <label for="model">Vehicle Model</label>
+    <input type="text" class="form-control" id="model" name="model" [(ngModel)]="jobcard.model">
+
+  </div>
+  <div class="col-md-6 form-group">
+    <label for="fuelType">Fuel Type</label>
+    <select class="form-control" id="fuelType" name="fuelType" [(ngModel)]="jobcard.fuelTypeId" required>
+      <option [ngValue]="0" default>-- Select Fuel Type --</option>
+      <option *ngFor="let fuel of fuelTypeArray" [ngValue]="fuel.fuelTypeId">
+        {{ fuel.name }}
+      </option>
+    </select>
+  </div>
+
+
+  <div class="col-md-6 form-group">
+    <label for="jobcardstatus">Job Card Status</label>
+    <select class="form-control" id="jobcardstatus" name="jobcardstatus" [(ngModel)]="jobcard.jobCardStatusId" required>
+      <option [ngValue]="0" default>-- Select Job card Status --</option>
+      <option *ngFor="let status of jobcardStatusArray" [ngValue]="status.jobCardStatusId">
+        {{ status.statusName }}
+      </option>
+    </select>
+  </div>
+  <div class="col-md-6 form-group">
+    <label for="odometerReading">OdometerReading</label>
+    <input type="number" class="form-control" id="odometerReading" name="odometerReading"
+      [(ngModel)]="jobcard.odometerReading">
+  </div>
+</div>

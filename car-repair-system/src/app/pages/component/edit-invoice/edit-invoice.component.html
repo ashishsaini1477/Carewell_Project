@@ -1,0 +1,280 @@
+<div class="card invoice-card">
+
+  <!-- HEADER -->
+  <div class="card-header invoice-header">
+    <h4 class="mb-0">🧾 Edit Invoice</h4>
+  </div>
+
+  <div class="card-body">
+
+    <!-- VEHICLE SEARCH -->
+    <div class="search-box">
+      <div class="row align-items-end">
+        <div class="col-md-6 form-group">
+          <label>Vehicle Registration No</label>
+          <input type="text" class="form-control text-uppercase" maxlength="12" [(ngModel)]="registrationNumber"
+            (ngModelChange)="onRegChange($event)">
+          <!-- <small class="text-danger" *ngIf="isRegInvalid">
+            Invalid vehicle number (Eg: DL01AT7833)
+          </small> -->
+        </div>
+
+        <div class="col-md-3 form-group">
+          <button class="btn btn-primary w-100" [disabled]="!registrationNumber || isRegInvalid"
+            (click)="getCustomerWithVehicle()">
+            🔍 Search Vehicle
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" *ngIf="showJobCard">
+      <div class="col-md-6 form-group">
+        <label>Select JobCard</label>
+        <select class="form-control" [(ngModel)]="selectedJobCard" (ngModelChange)="onJobCardChange($event)">
+          <option [ngValue]="null">-- Select JobCard --</option>
+          <option *ngFor="let jc of jobcardAndCustomerWithVehicles" [ngValue]="jc">
+            {{ jc.odometerReading }} | {{ jc.openDate | date:'dd MMM yyyy HH:mm' }}
+          </option>
+        </select>
+      </div>
+      <!-- <div class="col-md-3 form-group">
+          <button class="btn btn-primary w-100" [disabled]="!selectedJobCard || isRegInvalid"
+            (click)="getJobCardByJobCardId()">
+            🔍 Search Vehicle
+          </button>
+        </div> -->
+    </div>
+
+
+    <div class="row" *ngIf="showInvoice">
+      <div class="col-md-6 form-group">
+        <label>Select Invoice</label>
+        <select class="form-control" [(ngModel)]="invoice" (ngModelChange)="onInvoiceChange($event)">
+          <option [ngValue]="null">-- Select Invoice --</option>
+          <option *ngFor="let inv of invoiceList" [ngValue]="inv">
+            {{ inv.invoiceDate | date:'dd MMM yyyy HH:mm' }} |
+            ₹ {{ inv.grandTotal }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div *ngIf="showInvoiceForm">
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <label>Invoice Date</label>
+          <input type="date" class="form-control" [(ngModel)]="invoice.invoiceDate">
+        </div>
+      </div>
+
+
+      <!-- LINE ITEMS TABLE -->
+      <table class="table table-bordered invoice-table">
+
+        <thead>
+          <tr>
+            <th><b>Customer Order</b></th>
+            <th><b>HSN/SAC</b></th>
+            <th><b>Qty</b></th>
+            <th><b>Unit</b></th>
+            <th><b>Price/Unit</b></th>
+            <th><b>CGST%</b></th>
+            <th><b>SGST%</b></th>
+            <th><b>Taxable Amt</b></th>
+            <th><b>Dis %</b></th>
+            <th><b>Total</b></th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let i of invoice.lineItems; let idx = index">
+
+            <td>
+              <input class="form-control item-input" [(ngModel)]="i.orderName">
+            </td>
+            <td>
+              <input class="form-control" [(ngModel)]="i.hsnSac">
+            </td>
+            <td>
+              <input type="number" class="form-control qty-input" [(ngModel)]="i.qty" (input)="sanitizeNumber(i, 'qty')"
+                (change)="calculate(i)">
+            </td>
+            <td>
+              <input class="form-control">
+            </td>
+            <td>
+              <input type="number" class="form-control price-input" [(ngModel)]="i.unitPrice"
+                (input)="sanitizeNumber(i, 'unitPrice')" (change)="calculate(i)">
+            </td>
+            <td>
+              <input type="number" class="form-control tax-input" [(ngModel)]="i.cgstPercent"
+                (input)="sanitizeNumber(i, 'cgstPercent')" (change)="calculate(i)">
+            </td>
+
+            <td>
+              <input type="number" class="form-control tax-input" [(ngModel)]="i.sgstPercent"
+                (input)="sanitizeNumber(i, 'sgstPercent')" (change)="calculate(i)">
+            </td>
+            <td class="text-end">
+              {{ i.taxableAmount || 0 }}
+            </td>
+            <td>
+              <input class="form-control" [(ngModel)]="i.discount">
+            </td>
+            <td class="text-end">
+              {{ i.totalAmount || 0 }}
+            </td>
+            <td class="text-center">
+              <button class="btn btn-danger btn-sm" (click)="removeItem(idx)">
+                ❌
+              </button>
+            </td>
+          </tr>
+          <tr class="fw-bold bg-light">
+            <td><b>Total</b></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="text-end">
+              ₹ {{ getItemsTaxableTotal() }}
+            </td>
+            <td>-</td>
+            <td class="text-end">
+              ₹ {{ getItemsGrandTotal() }}
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
+
+      </table>
+      <button class="btn btn-outline-primary mb-3" (click)="addItem()">
+        ➕ Add Item
+      </button>
+      <!-- Labour work ITEMS TABLE -->
+      <table class="table table-bordered invoice-table">
+
+        <thead>
+          <tr>
+            <th><b>Labour Changes</b></th>
+            <th><b>HSN/SAC</b></th>
+            <th><b>Qty</b></th>
+            <th><b>Unit</b></th>
+            <th><b>Price/Unit</b></th>
+            <th><b>CGST%</b></th>
+            <th><b>SGST%</b></th>
+            <th><b>Taxable Amt</b></th>
+            <th><b>Dis %</b></th>
+            <th><b>Total</b></th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let i of invoice.labourWorks; let idx = index">
+
+            <td>
+              <input class="form-control item-input" [(ngModel)]="i.labourCharge">
+            </td>
+            <td>
+              <input class="form-control" [(ngModel)]="i.hsnSac">
+            </td>
+            <td>
+              <input type="number" class="form-control qty-input" [(ngModel)]="i.qty" (input)="sanitizeNumber(i, 'qty')"
+                (change)="calculateLabour(i)">
+            </td>
+            <td>
+              <input class="form-control">
+            </td>
+            <td>
+              <input type="number" class="form-control price-input" [(ngModel)]="i.unitPrice"
+                (input)="sanitizeNumber(i, 'unitPrice')" (change)="calculateLabour(i)">
+            </td>
+            <td>
+              <input type="number" class="form-control tax-input" [(ngModel)]="i.cgstPercent"
+                (input)="sanitizeNumber(i, 'cgstPercent')" (change)="calculateLabour(i)">
+            </td>
+
+            <td>
+              <input type="number" class="form-control tax-input" [(ngModel)]="i.sgstPercent"
+                (input)="sanitizeNumber(i, 'sgstPercent')" (change)="calculateLabour(i)">
+            </td>
+            <td class="text-end">
+              {{ i.taxableAmount || 0 }}
+            </td>
+            <td>
+              <input class="form-control" [(ngModel)]="i.discount">
+            </td>
+            <td class="text-end">
+              {{ i.totalAmount || 0 }}
+            </td>
+            <td class="text-center">
+              <button class="btn btn-danger btn-sm" (click)="removeLabourItem(idx)">
+                ❌
+              </button>
+            </td>
+          </tr>
+          <tr class="fw-bold bg-light">
+            <td><b>Total</b></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="text-end">
+              ₹ {{ getLabourTaxableTotal() }}
+            </td>
+            <td>-</td>
+            <td class="text-end">
+              ₹ {{ getLabourGrandTotal() }}
+            </td>
+            <td></td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+      <button class="btn btn-outline-primary mb-3" (click)="addLabourItem()">
+        ➕ Add Item
+      </button>
+
+
+      <div class="totals-box">
+        <div class="text-left">
+          <div class="form-check mt-2">
+            <input type="checkbox" class="form-check-input" id="isStamp" [(ngModel)]="invoice.isStamp" name="isStamp" />
+            <label class="form-check-label" for="isStamp">
+              Add Stamp on Invoice
+            </label>
+          </div>
+        </div>
+        <div class="text-right">
+          <p>
+            Sub Total:
+            <strong>₹ {{ subTotal }}</strong>
+          </p>
+
+          <p>
+            Discount:
+            <input type="number" class="form-control d-inline w-25" [(ngModel)]="invoice.discountValue">
+          </p>
+
+          <h4 class="mt-2">
+            GRAND TOTAL:
+            <span class="text-success">₹ {{ grandTotal }}</span>
+          </h4>
+        </div>
+      </div>
+      <button class="btn btn-success btn-lg mt-3" [disabled]="!isInvoiceValid()" (click)="editInvoice()">
+        💾 Update Invoice
+      </button>
+
+
+    </div>
+  </div>

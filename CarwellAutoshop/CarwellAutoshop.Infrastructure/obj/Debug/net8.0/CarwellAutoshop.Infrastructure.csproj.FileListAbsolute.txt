@@ -1,0 +1,17 @@
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\bin\Debug\net8.0\CarwellAutoshop.Infrastructure.deps.json
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\bin\Debug\net8.0\CarwellAutoshop.Infrastructure.runtimeconfig.json
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\bin\Debug\net8.0\CarwellAutoshop.Infrastructure.dll
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\bin\Debug\net8.0\CarwellAutoshop.Infrastructure.pdb
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\bin\Debug\net8.0\CarwellAutoshop.Domain.dll
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\bin\Debug\net8.0\CarwellAutoshop.Domain.pdb
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\obj\Debug\net8.0\CarwellAutoshop.Infrastructure.csproj.AssemblyReference.cache
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\obj\Debug\net8.0\CarwellAutoshop.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\obj\Debug\net8.0\CarwellAutoshop.Infrastructure.AssemblyInfoInputs.cache
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\obj\Debug\net8.0\CarwellAutoshop.Infrastructure.AssemblyInfo.cs
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\obj\Debug\net8.0\CarwellAutoshop.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\obj\Debug\net8.0\CarwellA.1B31B435.Up2Date
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\obj\Debug\net8.0\CarwellAutoshop.Infrastructure.dll
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\obj\Debug\net8.0\refint\CarwellAutoshop.Infrastructure.dll
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\obj\Debug\net8.0\CarwellAutoshop.Infrastructure.pdb
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\obj\Debug\net8.0\CarwellAutoshop.Infrastructure.genruntimeconfig.cache
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Infrastructure\obj\Debug\net8.0\ref\CarwellAutoshop.Infrastructure.dll

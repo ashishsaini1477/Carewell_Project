@@ -1,0 +1,219 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Carewell_Project\\CarwellAutoshop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|d:\\carewell_project\\carwellautoshop\\carwellautoshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|solutionrelative:carwellautoshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|d:\\carewell_project\\carwellautoshop\\carwellautoshop\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|solutionrelative:carwellautoshop\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|d:\\carewell_project\\carwellautoshop\\carwellautoshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|solutionrelative:carwellautoshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BACB25-B94E-4127-9B66-04DE27166C33}|CarwellAutoshop.Infrastructure\\CarwellAutoshop.Infrastructure.csproj|d:\\carewell_project\\carwellautoshop\\carwellautoshop.infrastructure\\masterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61BACB25-B94E-4127-9B66-04DE27166C33}|CarwellAutoshop.Infrastructure\\CarwellAutoshop.Infrastructure.csproj|solutionrelative:carwellautoshop.infrastructure\\masterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|d:\\carewell_project\\carwellautoshop\\carwellautoshop\\invoicepdf\\invoicepdfdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|solutionrelative:carwellautoshop\\invoicepdf\\invoicepdfdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|d:\\carewell_project\\carwellautoshop\\carwellautoshop\\controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|solutionrelative:carwellautoshop\\controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BACB25-B94E-4127-9B66-04DE27166C33}|CarwellAutoshop.Infrastructure\\CarwellAutoshop.Infrastructure.csproj|d:\\carewell_project\\carwellautoshop\\carwellautoshop.infrastructure\\customerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61BACB25-B94E-4127-9B66-04DE27166C33}|CarwellAutoshop.Infrastructure\\CarwellAutoshop.Infrastructure.csproj|solutionrelative:carwellautoshop.infrastructure\\customerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BACB25-B94E-4127-9B66-04DE27166C33}|CarwellAutoshop.Infrastructure\\CarwellAutoshop.Infrastructure.csproj|d:\\carewell_project\\carwellautoshop\\carwellautoshop.infrastructure\\vehicledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61BACB25-B94E-4127-9B66-04DE27166C33}|CarwellAutoshop.Infrastructure\\CarwellAutoshop.Infrastructure.csproj|solutionrelative:carwellautoshop.infrastructure\\vehicledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61BACB25-B94E-4127-9B66-04DE27166C33}|CarwellAutoshop.Infrastructure\\CarwellAutoshop.Infrastructure.csproj|d:\\carewell_project\\carwellautoshop\\carwellautoshop.infrastructure\\jobcarddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61BACB25-B94E-4127-9B66-04DE27166C33}|CarwellAutoshop.Infrastructure\\CarwellAutoshop.Infrastructure.csproj|solutionrelative:carwellautoshop.infrastructure\\jobcarddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|d:\\carewell_project\\carwellautoshop\\carwellautoshop\\controllers\\jobcardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|solutionrelative:carwellautoshop\\controllers\\jobcardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|d:\\carewell_project\\carwellautoshop\\carwellautoshop\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66AECFB8-FDC8-4214-B994-ED7C6055287E}|CarwellAutoshop\\CarwellAutoshop.csproj|solutionrelative:carwellautoshop\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\Program.cs",
+              "RelativeDocumentMoniker": "CarwellAutoshop\\Program.cs",
+              "ToolTip": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\Program.cs",
+              "RelativeToolTip": "CarwellAutoshop\\Program.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAAD8AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T02:34:31.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InvoicePdfDocument.cs",
+              "DocumentMoniker": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\InvoicePDF\\InvoicePdfDocument.cs",
+              "RelativeDocumentMoniker": "CarwellAutoshop\\InvoicePDF\\InvoicePdfDocument.cs",
+              "ToolTip": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\InvoicePDF\\InvoicePdfDocument.cs",
+              "RelativeToolTip": "CarwellAutoshop\\InvoicePDF\\InvoicePdfDocument.cs",
+              "ViewState": "AgIAAL8BAAAAAAAAAAAAAMoBAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T02:21:04.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MasterController.cs",
+              "DocumentMoniker": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\Controllers\\MasterController.cs",
+              "RelativeDocumentMoniker": "CarwellAutoshop\\Controllers\\MasterController.cs",
+              "ToolTip": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\Controllers\\MasterController.cs",
+              "RelativeToolTip": "CarwellAutoshop\\Controllers\\MasterController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowDYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:55:14.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MasterData.cs",
+              "DocumentMoniker": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop.Infrastructure\\MasterData.cs",
+              "RelativeDocumentMoniker": "CarwellAutoshop.Infrastructure\\MasterData.cs",
+              "ToolTip": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop.Infrastructure\\MasterData.cs",
+              "RelativeToolTip": "CarwellAutoshop.Infrastructure\\MasterData.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAlwIUAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T12:10:39.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InvoiceController.cs",
+              "DocumentMoniker": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\Controllers\\InvoiceController.cs",
+              "RelativeDocumentMoniker": "CarwellAutoshop\\Controllers\\InvoiceController.cs",
+              "ToolTip": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\Controllers\\InvoiceController.cs",
+              "RelativeToolTip": "CarwellAutoshop\\Controllers\\InvoiceController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwCsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T11:59:21.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\appsettings.json",
+              "RelativeDocumentMoniker": "CarwellAutoshop\\appsettings.json",
+              "ToolTip": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\appsettings.json",
+              "RelativeToolTip": "CarwellAutoshop\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-01T08:24:22.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VehicleData.cs",
+              "DocumentMoniker": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop.Infrastructure\\VehicleData.cs",
+              "RelativeDocumentMoniker": "CarwellAutoshop.Infrastructure\\VehicleData.cs",
+              "ToolTip": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop.Infrastructure\\VehicleData.cs",
+              "RelativeToolTip": "CarwellAutoshop.Infrastructure\\VehicleData.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAjwBsAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T06:41:54.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomerData.cs",
+              "DocumentMoniker": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop.Infrastructure\\CustomerData.cs",
+              "RelativeDocumentMoniker": "CarwellAutoshop.Infrastructure\\CustomerData.cs",
+              "ToolTip": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop.Infrastructure\\CustomerData.cs",
+              "RelativeToolTip": "CarwellAutoshop.Infrastructure\\CustomerData.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwB8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T11:46:47.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JobcardData.cs",
+              "DocumentMoniker": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop.Infrastructure\\JobcardData.cs",
+              "RelativeDocumentMoniker": "CarwellAutoshop.Infrastructure\\JobcardData.cs",
+              "ToolTip": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop.Infrastructure\\JobcardData.cs",
+              "RelativeToolTip": "CarwellAutoshop.Infrastructure\\JobcardData.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAWwBgAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T11:46:15.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "JobcardController.cs",
+              "DocumentMoniker": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\Controllers\\JobcardController.cs",
+              "RelativeDocumentMoniker": "CarwellAutoshop\\Controllers\\JobcardController.cs",
+              "ToolTip": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\Controllers\\JobcardController.cs",
+              "RelativeToolTip": "CarwellAutoshop\\Controllers\\JobcardController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA4wCYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T11:41:48.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "CarwellAutoshop\\Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\Carewell_Project\\CarwellAutoshop\\CarwellAutoshop\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "CarwellAutoshop\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAIAwwDMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T11:41:38.809Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

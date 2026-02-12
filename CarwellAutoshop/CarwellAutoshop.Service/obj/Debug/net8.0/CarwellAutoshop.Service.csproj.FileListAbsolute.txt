@@ -1,0 +1,17 @@
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\bin\Debug\net8.0\CarwellAutoshop.Service.deps.json
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\bin\Debug\net8.0\CarwellAutoshop.Service.dll
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\bin\Debug\net8.0\CarwellAutoshop.Service.pdb
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\bin\Debug\net8.0\CarwellAutoshop.Domain.dll
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\bin\Debug\net8.0\CarwellAutoshop.Infrastructure.dll
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\bin\Debug\net8.0\CarwellAutoshop.Domain.pdb
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\bin\Debug\net8.0\CarwellAutoshop.Infrastructure.pdb
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\obj\Debug\net8.0\CarwellAutoshop.Service.csproj.AssemblyReference.cache
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\obj\Debug\net8.0\CarwellAutoshop.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\obj\Debug\net8.0\CarwellAutoshop.Service.AssemblyInfoInputs.cache
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\obj\Debug\net8.0\CarwellAutoshop.Service.AssemblyInfo.cs
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\obj\Debug\net8.0\CarwellAutoshop.Service.csproj.CoreCompileInputs.cache
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\obj\Debug\net8.0\CarwellA.ECA1C02B.Up2Date
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\obj\Debug\net8.0\CarwellAutoshop.Service.dll
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\obj\Debug\net8.0\refint\CarwellAutoshop.Service.dll
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\obj\Debug\net8.0\CarwellAutoshop.Service.pdb
+D:\Carewell_Project\CarwellAutoshop\CarwellAutoshop.Service\obj\Debug\net8.0\ref\CarwellAutoshop.Service.dll

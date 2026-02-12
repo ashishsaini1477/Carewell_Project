@@ -1,0 +1,27 @@
+  <div class="row">
+    <div class="col-md-6 form-group">
+        <label for="name">Full Name</label>
+        <input type="text" class="form-control" id="name" 
+        name="name" [(ngModel)]="customer.name">
+    </div>
+    <div class="col-md-6 form-group">
+        <label for="mobile">Mobile No.</label>
+        <input type="number" class="form-control" id="mobile" 
+        name="mobile" #mobile="ngModel" [(ngModel)]="customer.mobile">
+        <div *ngIf="mobile.touched">
+          <small class="error" *ngIf="validation.checkNumber(customer.mobile)">Please enter number</small>
+        </div>
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-md-6 form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" 
+        name="email" [(ngModel)]="customer.email">
+    </div>
+    <div class="col-md-6 form-group">
+        <label for="address">Address</label>
+       <input type="text" class="form-control" id="address" name="address" [(ngModel)]="customer.address">
+    </div>
+  </div>
+ 
