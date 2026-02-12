@@ -77,13 +77,22 @@ namespace CarwellAutoshop.Infrastructure
         }
         public async Task<JobCardResponse> UpdateJobCard(EditJobCardDto request)
         {
-            var jobcardRes = await _repo.GetByIdAsync(request.JobCardId);
+            try
+            {
+                var jobcardRes = await _repo.GetByIdAsync(request.JobCardId);
 
-            jobcardRes.JobCardStatusId = request.JobCardStatusId;
-            jobcardRes.OdometerReading = request.OdometerReading;
+                jobcardRes.JobCardStatusId = request.JobCardStatusId;
+                jobcardRes.OdometerReading = request.OdometerReading;
 
-            await _repo.UpdateAsync(jobcardRes);
-            return _mapper.Map<JobCardResponse>(jobcardRes);
+                await _repo.UpdateAsync(jobcardRes);
+                return _mapper.Map<JobCardResponse>(jobcardRes);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+           
         }
     }
 }

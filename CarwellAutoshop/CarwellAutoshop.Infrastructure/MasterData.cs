@@ -7,7 +7,6 @@ using CarwellAutoshop.Infrastructure.Constant;
 using CarwellAutoshop.Infrastructure.Data;
 using CarwellAutoshop.Infrastructure.Interface;
 using CarwellAutoshop.Infrastructure.Utility;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
 
@@ -217,7 +216,7 @@ namespace CarwellAutoshop.Infrastructure
 
         public async Task<bool> UpdateInvoice(UpdateInvoiceRequestDto request)
         {
-            using var transaction = await _dbContext.Database.BeginTransactionAsync();
+           // using var transaction = await _dbContext.Database.BeginTransactionAsync();
 
             try
             {
@@ -237,15 +236,21 @@ namespace CarwellAutoshop.Infrastructure
                 invoice.InvoiceDate = request.InvoiceDate;
                 invoice.DiscountAmount = request.DiscountValue;
                 invoice.IsStamp = request.IsStamp;
+                invoice.DiscountValue = request.DiscountValue; 
+
                 // Remove old items
                 _dbContext.InvoiceLineItem.RemoveRange(invoiceLineItems);
                 _dbContext.LabourWork.RemoveRange(invoiceLabourWorks);
+
+                // flush deletes so DB-assigned keys / constraints are processed before new inserts
+                await _dbContext.SaveChangesAsync();
+
 
                 decimal subTotal = 0;
                 decimal cgst = 0;
                 decimal sgst = 0;
 
-                // Add updated line items
+                // now add updated line items
                 foreach (var item in request.LineItems)
                 {
                     var taxable = item.Qty * item.UnitPrice;
@@ -304,14 +309,14 @@ namespace CarwellAutoshop.Infrastructure
                 invoice.GrandTotal = (subTotal + cgst + sgst) - request.DiscountValue;
 
                 await _dbContext.SaveChangesAsync();
-                await transaction.CommitAsync();
+                //await transaction.CommitAsync();
 
                 return true;
             }
-            catch
+            catch (Exception ex)
             {
-                await transaction.RollbackAsync();
-                throw;
+                //await transaction.RollbackAsync();
+                throw ex;
             }
         }
 

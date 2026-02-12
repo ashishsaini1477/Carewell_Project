@@ -31,6 +31,7 @@ namespace CarwellAutoshop.Infrastructure
                     InvoiceDate = request.InvoiceDate,
                     InvoiceNumber = InvoiceConst.InvoiceNumber, 
                     IsStamp = request.IsStamp,
+                    DiscountValue = request.DiscountValue
                 };
 
                 decimal subTotal = 0;

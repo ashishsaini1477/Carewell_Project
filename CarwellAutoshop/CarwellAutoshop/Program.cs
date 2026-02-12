@@ -50,15 +50,19 @@ builder.Services.AddSwaggerGen();
 //)
 //);
 
+//builder.Services.AddDbContext<GarageDbContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), sql =>
+//    {
+//        sql.EnableRetryOnFailure(
+//            maxRetryCount: 5,
+//            maxRetryDelay: TimeSpan.FromSeconds(10),
+//            errorNumbersToAdd: null
+//        );
+//    }));
 builder.Services.AddDbContext<GarageDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), sql =>
-    {
-        sql.EnableRetryOnFailure(
-            maxRetryCount: 5,
-            maxRetryDelay: TimeSpan.FromSeconds(10),
-            errorNumbersToAdd: null
-        );
-    }));
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 
 //builder.Services.AddDbContext<GarageDbContext>(options =>
